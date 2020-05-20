@@ -40,7 +40,7 @@ The data currently required are entirely found on <a href="https://www.neonscien
 These functions we created were designed to run using a variety of sources, but we have yet to test these function outside of NEON products.  We will revisit this possibility later.
 
 ## Run Instructions
-The current repository is not executable using the functions, but the blog post can be run to see our preliminary results comparing canopy height measurements and *insitu* measurements of vegetation.  The code is demonstrated using NEON's Central Plain Experimental Range (CPER), the Onaqui Mountains site (ONAQ) and the Great Smokey Mountain site (GRSM).  
+The scripts folder is under development, but the blog post can be run to see our preliminary results comparing canopy height measurements and *insitu* measurements of vegetation.  The code is demonstrated using NEON's Central Plain Experimental Range (CPER), the Onaqui Mountains site (ONAQ) and the Great Smokey Mountain site (GRSM).  
 
 To run the Jupyter Notebook version of the blog located in the presentations directory, activate the environment.yml.  You will then have all of the packages required to run the code from the first cell to the last.
 
