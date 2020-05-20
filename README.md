@@ -39,41 +39,9 @@ The data currently required are entirely found on <a href="https://www.neonscien
 
 These functions we created were designed to run using a variety of sources, but we have yet to test these function outside of NEON products.  We will revisit this possibility later.
 
-1. What data formats and types do I need to apply this workflow (i.e. run the files in this repository)?
-
-2. With the information provided, could I find other appropriate data to run this workflow? (i.e. the right kind of input data)
-20.0 pts
-Full Marks
-10.0 pts
-Mid
-0.0 pts
-No Marks
-20.0 pt
-
 ## Run Instructions
 The current repository is not executable using the functions, but the blog post can be run to see our preliminary results comparing canopy height measurements and *insitu* measurements of vegetation.  The code is demonstrated using NEON's Central Plain Experimental Range (CPER), the Onaqui Mountains site (ONAQ) and the Great Smokey Mountain site (GRSM).  
 
 To run the Jupyter Notebook version of the blog located in the presentations directory, activate the environment.yml.  You will then have all of the packages required to run the code from the first cell to the last.
 
 Alternatively, should you want to merely visualize our approach and results, you can also see our blog in HTML format, also found in the presentations directory.
-
-2. How do I run this workflow? (i.e. order of file execution, connections between files such as helper scripts)
-20.0 pts
-Full Marks
-10.0 pts
-Mid
-
-s
-This criterion is linked to a Learning OutcomeAlignment between README.md and the repository files
-1. Does the README.md align with what is actually there?
-
-2. Are there any files present that are not identified/described in the README.md?
-10.0 pts
-Full Marks
-5.0 pts
-Mid
-0.0 pts
-No Marks
-10.0 pts
-This criterion is linked to a Learning OutcomeREADME.md is nicely organized and visually appealing
-Be sure to use Markdown syntax to add headers, organize text, add images and urls, etc, as appropriate.
