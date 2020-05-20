@@ -28,7 +28,7 @@ See the presentations directory for descriptive output of our research and analy
 See the environment.yml file for a current list of required packages. The environment can be forked and cloned to activate locally.
 
 ## Data Sources and Formats
-The data currently required to run the functions above are entirely found on NEON's website (www.neonscience.org).  The table below represensents all data we retrieved to create our blog (found in the 'presentations' folder).
+The data currently required are entirely found on <a href="https://www.neonscience.org/">NEON's website</a> and are retrieved using NEON's API through the code represented in this repository.  The table below represents all data we retrieved to create our blog (found in the 'presentations' folder).
 
 | PRODUCTS                                                               | DATA TYPE    | NEON PAGE             | PURPOSE                         |
 |------------------------------------------------------------------------|--------------|-----------------------|---------------------------------|
@@ -37,7 +37,7 @@ The data currently required to run the functions above are entirely found on NEO
 | Woody Plant Vegetation Structure                                       | GeoDataFrame | Explore Data Products | *Insitu* data                   |
 | Ecosystem Structure                                                    | raster tiles | Explore Data Products | CHM data                        |
 
-These functions we created were designed to be run using a variety of sources, but we have yet to test these function outside of NEON products.  We will revisit this possibility later.
+These functions we created were designed to run using a variety of sources, but we have yet to test these function outside of NEON products.  We will revisit this possibility later.
 
 1. What data formats and types do I need to apply this workflow (i.e. run the files in this repository)?
 
@@ -51,7 +51,11 @@ No Marks
 20.0 pt
 
 ## Run Instructions
-TBD
+The current repository is not executable using the functions, but the blog post can be run to see our preliminary results comparing canopy height measurements and *insitu* measurements of vegetation.  The code is demonstrated using NEON's Central Plain Experimental Range (CPER), the Onaqui Mountains site (ONAQ) and the Great Smokey Mountain site (GRSM).  
+
+To run the Jupyter Notebook version of the blog located in the presentations directory, activate the environment.yml.  You will then have all of the packages required to run the code from the first cell to the last.
+
+Alternatively, should you want to merely visualize our approach and results, you can also see our blog in HTML format, also found in the presentations directory.
 
 2. How do I run this workflow? (i.e. order of file execution, connections between files such as helper scripts)
 20.0 pts
