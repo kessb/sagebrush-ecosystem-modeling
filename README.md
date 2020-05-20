@@ -28,7 +28,7 @@ See the presentations directory for descriptive output of our research and analy
 See the environment.yml file for a current list of required packages. The environment can be forked and cloned to activate locally.
 
 ## Data Sources and Formats
-The data currently required are entirely found on <a href="neonscience.org">NEON's website</a> and are retrieved using NEON's API through the code represented in this repository.  The table below represents all data we retrieved to create our blog (found in the 'presentations' folder).
+The data currently required are entirely found on <a href="https://www.neonscience.org/">NEON's website</a> and are retrieved using NEON's API through the code represented in this repository.  The table below represents all data we retrieved to create our blog (found in the 'presentations' folder).
 
 | PRODUCTS                                                               | DATA TYPE    | NEON PAGE             | PURPOSE                         |
 |------------------------------------------------------------------------|--------------|-----------------------|---------------------------------|
