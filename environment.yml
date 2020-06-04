@@ -22,9 +22,7 @@ dependencies:
   - rasterstats
   - geopy
   - cartopy
-  - laspy
-  - spectral
-  - whitebox
+ 
   #- geopandas
   - contextily
   - earthpy
@@ -34,7 +32,12 @@ dependencies:
   - hydrofunctions
   - geocoder
   - tweepy
-
+  # New installs
+  - spectral
+  - laspy
+  - whitebox
+  - h5py
+    
   # Natural language processing
   - nltk 
   - textblob
