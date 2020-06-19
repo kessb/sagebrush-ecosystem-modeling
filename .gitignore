@@ -8,3 +8,6 @@ tmp/
 nb_errors.txt
 old-mistakes-homeworks/
 ipynb_files_built.txt
+# Local scratchpad directory
+*/local-scratchpad/*
+local-scratchpad/*
