@@ -1,6 +1,8 @@
+# The following functions were taken from NEON https://www.neonscience.org/classification-endmember-python
 import h5py, os, copy
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 import pysptools.util as util
 import pysptools.eea as eea #endmembers extraction algorithms
 import pysptools.abundance_maps as amap
@@ -127,32 +129,27 @@ def clean_neon_refl_data(data,metadata):
     metadata_clean['wavelength'] = [metadata['wavelength'][i] for i in valid_band_range]
 
     return data_clean, metadata_clean
-def plot_aop_refl(band_array,
-                  refl_extent,
-                  colorlimit=(0,1),
-                  ax=plt.gca(),
-                  title='',
-                  cbar ='on',
-                  cmap_title='',
-                  colormap='pink_r'):  
-    plot = plt.imshow(band_array,extent=refl_extent,clim=colorlimit); 
-    if cbar == 'on':
-        cbar = plt.colorbar(plot,aspect=40); plt.set_cmap(colormap); 
-        cbar.set_label(cmap_title,rotation=90,labelpad=20);
-    plt.title(title); ax = plt.gca(); 
-    ax.ticklabel_format(useOffset=False, style='plain'); 
-    rotatexlabels = plt.setp(ax.get_xticklabels(),rotation=90); 
+ 
     
 def clean_spectral_array(object_spect_dict):
+    """Clean spectral library reflectance data
+    drop bad reflectance data (-9999) from pandas
+    containing reflectance and wavelengths. Convert
+    cleaned pandas to numpy arrays of reflectance 
+    and wavelength.
+     ----------
+    object_spect_dict : dictionary of object and
+        its corresponding reflectance and wavelengths
+    Returns
+    -------
+    res_arr : numpy of reflectance values
+    wave_arr : numpy of wavelengths for object
+    """
     df = pd.DataFrame(data=object_spect_dict)
-    df=df.mask(df<-500)
+    df=df.mask(df<-9999)
     df=df.dropna()
     res_arr= df['Resolution'].to_numpy()
     wave_arr= df['Wavelength'].to_numpy()
     wave_arr=wave_arr*1000
     return res_arr, wave_arr
 
-# def SAM(data,E,thrs=None):
-#     sam = cls.SAM()
-#     cmap = sam.classify(data,E,threshold=thrs)
-#     sam.display(colorMap='Paired')
